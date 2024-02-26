@@ -4,25 +4,35 @@
 #home {
     width: 100%;
     height: 100vh;
-    background-color: pink;
 }
 
 .mainhome {
     position: relative;
+    
 }
 
 .mainbg {
     width: 100%;
     height: 100vh;
     position: absolute;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mainbg img {
+    position: absolute;
+    top: -100%;
 }
 
 .topbar {
     width: 100%;
     height: 150px;
     padding: 0 13%;
-    background-color: violet;
     position: absolute;
+    position: fixed;
+    top: 0;
 }
 
 .topbar ul {
@@ -32,8 +42,12 @@
 }
 
 .topbar li {
-    padding-top: 5%;
-    background-color: yellowgreen;
+    padding-top: 8%;
+
+}
+
+.topbar li a {
+    color: var(--white);     
 }
 
 .artistlogo {
@@ -41,22 +55,19 @@
     height: 100px;
     position: absolute;
     top: 700px;
-    left: 25%;
-    background-color: goldenrod;
+    left: 30%;
 }
 
 
 /* ABOUT */
 #about {
     width: 100%;
-    height: 100vh;
-    background-color: turquoise
+    height: auto;
 }
 
 .abouttext {
     width: 100%;
     height: 250px;
-    background-color: thistle;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -64,38 +75,52 @@
 }
 
 .debut {
-    background-color: palegreen;
     width: 300px;
     height: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.debut p {
+    font-size: 7rem;
+    font-family:'MADE TOMMY Regular_PERSONAL USE';
+    font-weight: bold;
 }
 
 .explain {
-    background-color: peru;
-    width: 500px;
+    width: 65%;
     height: 150px;
+    text-align: center;
+}
+
+.explain p{
+    font-size: var(--size-xxs);
 }
 
 .aboutphoto {
     width: 100%;
-    height: 100vh;
-    background-color: teal;
+}
+
+.aboutphoto img {
+    width: 100%;
 }
 
 /* MEMBERS */
 #members {
     width: 100%;
     height: auto;
+    margin-top: -4px;
 }
 
 .membersboard {
     width: 100%;
     height: 100vh;
-    background-color: peachpuff;
+    background-color: black;
     display: flex;
 }
 
 .innerbox {
-    width: 55%;
+    width: 800px;
     height: 90%;
     margin: auto;
     background-color: black;
@@ -103,54 +128,122 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .profile1 {
-    width: 80%;
-    height: 260px;
-    background-color: cadetblue;
+    width: 100%;
+    height: 255px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .profile2 {
     width: 100%;
-    height: 260px;
-    background-color:palevioletred;
+    height: 255px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .profile3 {
     width: 100%;
-    height: 260px;
-    background-color: indianred;
+    height: 255px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .ph1 {
-    width: 250px;
+    width: 270px;
     height: 100%;
-    background-color: antiquewhite;
     border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph1 img {
+    width: 100%;
 }
 
 .ph2 {
-    width: 250px;
+    width: 200px;
     height: 100%;
-    background-color: antiquewhite;
-    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph2 img {
+    width: 100%;
+    margin-top: 28px;
 }
 
 .ph3 {
-    width: 250px;
+    width: 270px;
     height: 100%;
-    background-color: antiquewhite;
     border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph3 img {
+    width: 100%;
+}
+
+.ph4 {
+    width: 270px;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph4 img {
+    width: 100%;
+}
+
+.ph5 {
+    width: 270px;
+    height: 100%;
+
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph5 img {
+    width: 100%;
+}
+
+.ph6 {
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ph6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.ph7 {
+    width: 400px;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph7 img {
+    width: 100%;
+}
+
+.ph8 {
+    width: 270px;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph8 img {
+    width: 100%;
 }
 
 .introduce{
     width: 100%;
     height: 100vh;
-    background-color: gainsboro;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -158,82 +251,223 @@
 }
 
 .le_logo {
-    background-color: palegreen;
     width: 300px;
     height: 50px;
+}
+
+.le_logo img {
+    width: 100%;
+
 }
 
 .membersinfo {
     background-color: plum;
     width: 300px;
     height: 600px;
+    text-align: center;
 }
 
+.membersname {
+    background-color: yellowgreen;
+    padding-top: 50px;
+
+}
+
+.manme {
+    font-weight: bold;
+}
+
+.type {
+    background-color: turquoise;
+    padding-top: 30px;
+}
 
 /* GALLERY */
 #gallery {
     width: 100%;
     height: 100vh;
-    display: flex;
-    background-color: cornflowerblue;
 }
 
 .galleryboard {
-    width: 55%;
-    height: 90%;
+    width: 800px;
+    height: 99%;
     margin: auto;
-    background-color: skyblue;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
-    position: relative;
+}
+
+.ginner1 {
+    width: 800px;
+    height: 33%;
+}
+
+.ginner2 {
+    width: 800px;
+    height: 66%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .concept1 {
-    width: 80%;
-    height: 270px;
-    background-color: aquamarine;
+    width: 100%;
+    height: 300px;
     display: flex;
     justify-content: space-between;
 }
 
 .concept2 {
-    width: 80%;
-    height: 270px;
-    background-color: aquamarine;
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .concept3 {
-    width: 80%;
-    height: 270px;
-    background-color: aquamarine;
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.concept4 {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.outbox1 {
+    width: 100%;
+    height: 300px;
+}
+
+.outbox1-1 {
+    width: 100%;
+    height: 295px;
+}
+
+.outbox2 {
+    width: 100%;
+    height: 180px;
+}
+
+.outbox2-1 {
+    width: 100%;
+    height: 428px;
+}
+
+.outbox3 {
+    width: 100%;
+    height: 350px;
+}
+
+.outbox3-1 {
+    width: 100%;
+    height: 245px;
 }
 
 .gbox1 {
-    width: 270px;
+    width: 260px;
     height: 100%;
-    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gbox1 img {
+    width: 100%;
 }
 
 .gbox2 {
-    width: 270px;
+    width: 260px;
     height: 100%;
-    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gbox2 img {
+    width: 100%;
 }
 
 .gbox3 {
-    width: 270px;
+    width: 260px;
     height: 100%;
-    background-color: #333;
+    overflow: hidden;
+}
+
+.gbox3 img {
+    width: 100%;
+}
+
+.gbox4 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox4 img {
+    width: 100%;
+}
+
+.gbox5 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox5 img {
+    width: 100%;
+}
+
+.gbox6 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox6 img {
+    width: 100%;
+}
+
+.gbox7 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox7 img {
+    width: 100%;
+}
+
+.gbox8 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox8 img {
+    width: 100%;
+}
+
+.gbox9 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox9 img {
+    width: 100%;
 }
 
 /* DISCOGRAPHY */
 #discography {
     width: 100%;
-    height: 100vh;
-    background-color: rosybrown;
+    height: auto;
 }
 
 .container {
@@ -243,15 +477,14 @@
 .discobox {
     width: 100%;
     height: 100vh;
-    background-color: #ddd;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .albumbox {
-    width: 50%;
+    width:  680px;
     height: 100%;
-    background-color: paleturquoise;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,17 +494,23 @@
 .album {
     width: 200px;
     height: 100px;
-    background-color: yellowgreen;
+    font-weight: bold;
+    font-size: 10rem;
+    text-align: center;
 }
 
 .disco {
     width: 400px;
     height: 400px;
-    background-color: darkkhaki;
+    overflow: hidden;
+}
+
+.disco img {
+    width: 100%;
 }
 
 .trackbox {
-    width: 50%;
+    width: 680px;
     height: 100%;
     background-color: rgb(48, 209, 209);
     display: flex;
@@ -283,7 +522,13 @@
 .track {
     width: 200px;
     height: 100px;
-    background-color: yellowgreen;
+    font-weight: bold;
+    font-size: 10rem;
+    text-align: center;
+}
+
+.track ul li{
+    float: left;
 }
 
 .tracklist {
@@ -301,7 +546,37 @@
 /* LEGACY */
 #legacy {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-color: grey;
 }
     
+.legacyboard {
+    width: 80%;
+    height: 100vh;
+    background-color: wheat;
+    margin: 0 auto;
+}
+
+.legacy2023 {
+    width: 80%;
+    height: 60%;
+    background-color: rgb(218, 148, 19);
+    margin: 0 auto;
+}
+
+.legacy2022 {
+    width: 80%;
+    height: 40%;
+    background-color: rgb(128, 85, 5);
+    margin: 0 auto;
+}
+
+.bottomphoto {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(199, 179, 245);
+}
+
+
+
+
