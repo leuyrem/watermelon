@@ -74,10 +74,8 @@
     align-items: center;
     height: 100px;
     position: fixed;
-    top: 0;
-    /* backdrop-filter: blur(17px); */
     width: 100%;
-    z-index: 10;
+    z-index: 999;
 }
 
 .small .logo {
@@ -97,16 +95,14 @@ nav ul li .sub li a:hover {
 @media (max-width: 769px) {
     * {
         font-family: 'Pretendard-Regular';
-        font-weight: 400;
-        font-size: var(--size-s);
     }
 
     /* 헤더 메인메뉴 */
 
     nav {
         width: 0;
-        height: 115vh;
-        position: absolute;
+        height: 100vh;
+        position: fixed;
         top: 0;
         right: 0;
         z-index: 10;
@@ -124,7 +120,7 @@ nav ul li .sub li a:hover {
 
     nav ul {
         width: 62.5%;
-        height: auto;
+        height: 80%;
         display: none;
     }
 
@@ -137,7 +133,7 @@ nav ul li .sub li a:hover {
     }
 
     nav ul li:not(:last-child) {
-        margin-bottom: 90px;
+        margin-bottom: 60px;
     }
 
     nav ul li .t {
@@ -168,12 +164,12 @@ nav ul li .sub li a:hover {
 
     nav ul li .sub li a {
         color: #000;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 500;
     }
 
     nav ul li .sub li span {
-        font-size: 20px;
+        font-size: 16px;
         color: #999;
         margin-left: 15px;
     }
@@ -359,8 +355,6 @@ nav ul li .sub li a:hover {
 @media (min-width: 770px) and (max-width: 1199px) {
     * {
         font-family: 'Pretendard-Regular';
-        font-weight: 400;
-        font-size: var(--size-s);
     }
 
     /* 헤더 메인메뉴 */
@@ -368,7 +362,7 @@ nav ul li .sub li a:hover {
     nav {
         width: 0;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         z-index: 10;
@@ -516,7 +510,7 @@ nav ul li .sub li a:hover {
     .phone>p,
     .email>p{
         font-size: var(--size-xxs);
-        line-height: var(--line-s);
+        line-height: 180%;
     }
     
     .address span {
@@ -622,8 +616,6 @@ nav ul li .sub li a:hover {
 @media (min-width: 1200px) {
     * {
         font-family: 'Pretendard-Regular';
-        font-weight: 400;
-        font-size: var(--size-s);
     }
 
     /* 헤더 메인메뉴 */
@@ -631,7 +623,7 @@ nav ul li .sub li a:hover {
     nav {
         width: 0;
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         z-index: 10;
@@ -718,7 +710,7 @@ nav ul li .sub li a:hover {
     }
     
     #footer_box {
-        width: 1200px;
+        width: 100%;
         height: 100%;
         display: flex;
         justify-content: space-around;
@@ -811,6 +803,7 @@ nav ul li .sub li a:hover {
     }
     
     .submit {
+        width: 80%;
         padding: 9px 20px;
         margin-top: 8px;
         background-color: #000;
@@ -870,5 +863,16 @@ nav ul li .sub li a:hover {
         font-size: var(--size-s);
         margin-left: 15px;
         cursor: pointer;
+    }
+}
+
+@media (min-width: 1500px) {
+    #footer_box {
+        width: 1500px;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-flow: row wrap;
+        margin: 0 auto;
     }
 }
