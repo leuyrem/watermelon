@@ -10,10 +10,8 @@
     <link rel="stylesheet" href="sub_css/sub_artist.css">
     <link rel="stylesheet" href="css/common.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="js/sub_artist.js"></script>
-    <script src="js/common.js"></script>
-    
+
+
 
 
 
@@ -278,18 +276,33 @@
                 <div class="discobox">
                     <div class="albumbox">
                         <div class="album">ALBUM</div>
-                        <div class="disco">
-                            <ul>
-                                <li>
-                                    <img src="sub_img/disco5.png" alt="">                                    
-                                </li>
-                                <li>
-                                    <img src="sub_img/disco4.jpg" alt="">                                    
-                                </li>
-                            </ul>
-
+                        <div class="slider__wrap">
+                            <div class="slider__img">
+                                <div class="slider__inner">
+                                    <div class="slider s01"><img src="sub_img/disco5.png" alt="이미지1"></div>
+                                    <div class="slider s02"><img src="sub_img/disco4.jpg" alt="이미지2"></div>
+                                    <div class="slider s03"><img src="sub_img/disco3.jpg" alt="이미지3"></div>
+                                    <div class="slider s04"><img src="sub_img/disco2.png" alt="이미지4"></div>
+                                    <div class="slider s05"><img src="sub_img/disco1.png" alt="이미지5"></div>
+                                </div>
+                            </div>
+                            <div class="slider__btn">
+                                <a href="javascript:;" class="previous">previous (이전)</a>
+                                <a href="javascript:;" class="next">next (다음)</a>
+                            </div>
+                            <div class="slider__dot">
+                                <a href="javascript:;" class="dot active">1</a>
+                                <a href="javascript:;" class="dot">2</a>
+                                <a href="javascript:;" class="dot">3</a>
+                                <a href="javascript:;" class="dot">4</a>
+                                <a href="javascript:;" class="dot">5</a>
+                            </div>
                         </div>
+
                     </div>
+
+
+
                     <div class="trackbox">
                         <div class="track">TRACK</div>
                         <div class="tracklist">
@@ -392,81 +405,87 @@
             </div>
         </div>
     </div>
-</body>
-<footer>
-    <div id="footer_box">
-        <div class="footer_menu1">
-            <ul>
-                <li><a href="#">About US</a></li>
-                <li><a href="#">Terms&Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-        </div>
-        <div class="footer_menu2">
-            <ul>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Location</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Event</a></li>
-            </ul>
-        </div>
-        <div class="footer_info">
-            <ul>
-                <li class="address">
-                    <span>
-                        Address:
-                    </span>
-                    <p>
-                        905, Deogyeon-daero, <br>
-                        Paldal-gu, Suwon-si, <br>
-                        Gyeonggi-do, <br>
-                        Republic of Korea
-                    </p>
-                </li>
-                <li class="phone">
-                    <span>
-                        Phone:
-                    </span>
-                    <p>
-                        (+82)10 1234 5678
-                    </p>
-                </li>
-                <li class="email">
-                    <span>
-                        Email:
-                    </span>
-                    <p>
-                        watermelon@naver.com
-                    </p>
-                </li>
-            </ul>
-        </div>
-        <div class="footer_mail">
-            <p>
-                Sign up for our newsletter
-            </p>
-            <form class="footer_ch">
-                <input type="text" placeholder="Your E-mail..." name="submit" class="submit">
-                <button type="button" class="fa-regular fa-paper-plane"></button>
-            </form>
-        </div>
-        <div class="footer_line">
-            <hr>
-        </div>
-        <div class="footer_last">
-            <div class="last_text">
+
+    <footer>
+        <div id="footer_box">
+            <div class="footer_menu1">
+                <ul>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Terms&Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer_menu2">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Event</a></li>
+                </ul>
+            </div>
+            <div class="footer_info">
+                <ul>
+                    <li class="address">
+                        <span>
+                            Address:
+                        </span>
+                        <p>
+                            905, Deogyeon-daero, <br>
+                            Paldal-gu, Suwon-si, <br>
+                            Gyeonggi-do, <br>
+                            Republic of Korea
+                        </p>
+                    </li>
+                    <li class="phone">
+                        <span>
+                            Phone:
+                        </span>
+                        <p>
+                            (+82)10 1234 5678
+                        </p>
+                    </li>
+                    <li class="email">
+                        <span>
+                            Email:
+                        </span>
+                        <p>
+                            watermelon@naver.com
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_mail">
                 <p>
-                    Copyright ©2024 All rights reserved | made by Watermelon
+                    Sign up for our newsletter
                 </p>
+                <form class="footer_ch">
+                    <input type="text" placeholder="Your E-mail..." name="submit" class="submit">
+                    <button type="button" class="fa-regular fa-paper-plane"></button>
+                </form>
             </div>
-            <div class="last_icon">
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-line"></i>
+            <div class="footer_line">
+                <hr>
+            </div>
+            <div class="footer_last">
+                <div class="last_text">
+                    <p>
+                        Copyright ©2024 All rights reserved | made by Watermelon
+                    </p>
+                </div>
+                <div class="last_icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-line"></i>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/sub_artist.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
 
 </html>

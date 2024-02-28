@@ -9,7 +9,6 @@
 
 .mainhome {
     position: relative;
-    
 }
 
 .mainbg {
@@ -23,9 +22,8 @@
 }
 
 .mainbg img {
-    width: 100%;
     position: absolute;
-    top: -100%;
+    top: -115%;
 }
 
 .topbar {
@@ -37,6 +35,7 @@
     position: absolute;
     position: fixed;
     top: 170px;
+    z-index: 1;
 }
 
 .topbar ul {
@@ -54,10 +53,10 @@
 }
 
 .topbar li a {
-    font-family:'MADE TOMMY Regular_PERSONAL USE';
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
     font-size: var(--size-xs);
-    color: var(--white);  
- 
+    color: var(--white);
+
 }
 
 .topbar li a:hover {
@@ -69,7 +68,7 @@
     height: 100px;
     position: absolute;
     top: 580px;
-    left: 28%;
+    left: 30%;
 }
 
 
@@ -97,7 +96,7 @@
 
 .debut p {
     font-size: 7rem;
-    font-family:'MADE TOMMY Regular_PERSONAL USE';
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
     font-weight: bold;
 }
 
@@ -107,7 +106,7 @@
     text-align: center;
 }
 
-.explain p{
+.explain p {
     font-size: var(--size-xs);
 }
 
@@ -255,7 +254,7 @@
     width: 100%;
 }
 
-.introduce{
+.introduce {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -283,7 +282,7 @@
 .membersname {
     padding-top: 50px;
     font-size: var(--size-s);
-    
+
 }
 
 .membersname ul {
@@ -317,6 +316,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .ginner1 {
@@ -326,7 +326,7 @@
 
 .ginner2 {
     width: 800px;
-    height: 69%;
+    height: 66%;
     display: flex;
     justify-content: space-between;
 }
@@ -364,33 +364,34 @@
 
 .outbox1 {
     width: 100%;
-    height: 315px;
+    height: 270px;
 }
 
 .outbox1-1 {
     width: 100%;
-    height: 370px;
+    height: 320px;
 }
 
 .outbox2 {
     width: 100%;
-    height: 180px;
-
+    height: 190px;
 }
 
 .outbox2-1 {
     width: 100%;
-    height: 520px;
+    height: 450px;
 }
 
 .outbox3 {
     width: 100%;
-    height: 400px;
+    height: 320px;
+
 }
 
 .outbox3-1 {
     width: 100%;
-    height: 300px;
+    height: 265px;
+
 }
 
 .gbox1 {
@@ -501,9 +502,8 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    align-items: center;
+    justify-content: center;
 }
 
 .albumbox {
@@ -521,18 +521,95 @@
     font-weight: bold;
     font-size: 12rem;
     text-align: center;
-    font-family:'MADE TOMMY Regular_PERSONAL USE';
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
 }
 
-.disco {
+.slider__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .slider__img {
+    /*이미지가 나타나는(보이는) 영역*/
+    position: relative;
     width: 400px;
     height: 400px;
     overflow: hidden;
-}
+  }
 
-.disco img {
+  .slider__inner {
+    /*이미지가 슬라이드 되는(움직이는) 영역*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 4800px;
+    height: 450px;
+  }
+
+  .slider {
+    position: relative;
+    width: 400px;
+    height: 400px;
+  }
+
+  .slider img {
     width: 100%;
-}
+  }
+
+  .slider__btn a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    /* background-color: #fff; */
+  }
+
+  .slider__btn a.previous {
+    left: -20%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-left' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='11 7 6 12 11 17' /%3E%3Cpolyline points='17 7 12 12 17 17' /%3E%3C/svg%3E");
+    text-indent: -99999px;
+  }
+
+  .slider__btn a.next {
+    right: -20%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-right' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='7 7 12 12 7 17' /%3E%3Cpolyline points='13 7 18 12 13 17' /%3E%3C/svg%3E");
+    text-indent: -99999px;
+  }
+
+  /* .slider__btn a.previous:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-left' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='11 7 6 12 11 17' /%3E%3Cpolyline points='17 7 12 12 17 17' /%3E%3C/svg%3E");
+  }
+
+  .slider__btn a.next:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-right' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='7 7 12 12 7 17' /%3E%3Cpolyline points='13 7 18 12 13 17' /%3E%3C/svg%3E");
+  } */
+
+  .slider__dot {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+  }
+
+  .slider__dot .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    opacity: 0.5;
+    display: inline-block;
+    border-radius: 50%;
+    text-indent: -9999px;
+    transition: all 0.5s;
+    margin: 3px;
+  }
+
+  .slider__dot .dot.active {
+    background-color: #7afafa;
+  }
+
+
 
 .trackbox {
     width: 700px;
@@ -548,13 +625,13 @@
     height: 100px;
     font-weight: bold;
     font-size: 12rem;
-    font-family:'MADE TOMMY Regular_PERSONAL USE';
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
 }
 
 .tracklist {
     width: 400px;
     height: 400px;
-    font-family:'MADE TOMMY Regular_PERSONAL USE';
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
 }
 
 .tracklist ol {
@@ -593,7 +670,7 @@
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    
+
 }
 
 .movie img {
@@ -608,7 +685,7 @@
     background-color: black;
     margin-top: -2px;
 }
-    
+
 .legacyboard {
     width: 74%;
     height: 100vh;
@@ -667,7 +744,7 @@
 .bottomphoto {
     width: 100%;
     height: 100%;
-    background-color:  black;
+    background-color: black;
     overflow: hidden;
 }
 
@@ -679,6 +756,4 @@
 
 .bottomphotoinner img {
     width: 100%;
-} 
-
-
+}
