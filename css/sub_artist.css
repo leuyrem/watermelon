@@ -1,0 +1,775 @@
+@charset "utf-8";
+
+
+/* HOME */
+#home {
+    width: 100%;
+    height: 100vh;
+}
+
+.mainhome {
+    position: relative;
+}
+
+.mainbg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mainbg img {
+    position: absolute;
+    top: -115%;
+}
+
+.topbar {
+    width: 180px;
+    height: 100vh;
+    /* width: 100%;
+    height: 150px; */
+    /* padding: 0 13%; */
+    position: absolute;
+    position: fixed;
+    top: 170px;
+    z-index: 1;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.topbar ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 65%;
+}
+
+.topbar li {
+    padding-top: 5%;
+    text-align: left;
+    text-indent: 70px;
+}
+
+
+.topbar li a {
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    font-size: var(--size-xs);
+    color: var(--white);
+
+}
+
+.topbar li a:hover {
+    color: var(--point);
+}
+
+.artistlogo {
+    width: 50%;
+    height: 100px;
+    position: absolute;
+    top: 580px;
+    left: 30%;
+
+}
+
+.artistlogo img {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+
+/* ABOUT */
+#about {
+    width: 100%;
+    height: auto;
+}
+
+.abouttext {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.debut {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.debut p {
+    font-size: 7rem;
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    font-weight: bold;
+}
+
+.explain {
+    width: 65%;
+    height: 150px;
+    text-align: center;
+}
+
+.explain p {
+    font-size: var(--size-xs);
+}
+
+.aboutphoto {
+    width: 100%;
+}
+
+.aboutphoto img {
+    width: 100%;
+}
+
+/* MEMBERS */
+#members {
+    width: 100%;
+    height: auto;
+    margin-top: -4px;
+}
+
+.membersboard {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+.innerbox {
+    width: 800px;
+    height: 90%;
+    margin: auto;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile1 {
+    width: 100%;
+    height: 255px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.profile2 {
+    width: 100%;
+    height: 255px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile3 {
+    width: 100%;
+    height: 255px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ph1 {
+    width: 270px;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph1 img {
+    width: 100%;
+}
+
+
+
+.ph2 {
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ph2 img {
+    width: 100%;
+    margin-top: 28px;
+}
+
+.ph3 {
+    width: 270px;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph3 img {
+    width: 100%;
+}
+
+.ph4 {
+    width: 270px;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph4 img {
+    width: 100%;
+}
+
+.ph5 {
+    width: 270px;
+    height: 100%;
+
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph5 img {
+    width: 100%;
+}
+
+.ph6 {
+    width: 200px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.ph6 img {
+    width: 100%;
+    height: 100%;
+}
+
+.ph7 {
+    width: 400px;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph7 img {
+    width: 100%;
+}
+
+.ph8 {
+    width: 270px;
+    height: 100%;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.ph8 img {
+    width: 100%;
+}
+
+.introduce {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.le_logo {
+    width: 300px;
+    height: 50px;
+}
+
+.le_logo img {
+    width: 100%;
+
+}
+
+.membersinfo {
+    width: 300px;
+    height: 700px;
+    text-align: center;
+}
+
+.membersname {
+    padding-top: 50px;
+    font-size: var(--size-s);
+
+}
+
+.membersname ul {
+    padding: 5%;
+}
+
+.manme {
+    font-weight: bold;
+}
+
+.type {
+    padding-top: 0px;
+    font-size: var(--size-s);
+}
+
+.type ul {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* GALLERY */
+#gallery {
+    width: 100%;
+    height: 100vh;
+}
+
+.galleryboard {
+    width: 800px;
+    height: 99%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.ginner1 {
+    width: 800px;
+    height: 31%;
+}
+
+.ginner2 {
+    width: 800px;
+    height: 66%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.concept1 {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.concept2 {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.concept3 {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.concept4 {
+    width: 260px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.outbox1 {
+    width: 100%;
+    height: 270px;
+}
+
+.outbox1-1 {
+    width: 100%;
+    height: 320px;
+}
+
+.outbox2 {
+    width: 100%;
+    height: 190px;
+}
+
+.outbox2-1 {
+    width: 100%;
+    height: 450px;
+}
+
+.outbox3 {
+    width: 100%;
+    height: 320px;
+
+}
+
+.outbox3-1 {
+    width: 100%;
+    height: 270px;
+
+}
+
+.gbox1 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gbox1 img {
+    width: 100%;
+}
+
+.gbox2 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gbox2 img {
+    width: 100%;
+}
+
+.gbox3 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox3 img {
+    width: 100%;
+}
+
+.gbox4 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox4 img {
+    width: 100%;
+}
+
+.gbox5 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox5 img {
+    width: 100%;
+}
+
+.gbox6 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox6 img {
+    width: 100%;
+}
+
+.gbox7 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox7 img {
+    width: 100%;
+}
+
+.gbox8 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox8 img {
+    width: 100%;
+}
+
+.gbox9 {
+    width: 260px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gbox9 img {
+    width: 100%;
+}
+
+/* DISCOGRAPHY */
+#discography {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 0 13%;
+}
+
+.discobox {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.albumbox {
+    width: 700px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.album {
+    width: 200px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 12rem;
+    text-align: center;
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+}
+
+.slider__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slider__img {
+    /*이미지가 나타나는(보이는) 영역*/
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider__inner {
+    /*이미지가 슬라이드 되는(움직이는) 영역*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 4800px;
+    height: 450px;
+}
+
+.slider {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+.slider img {
+    width: 100%;
+}
+
+.slider__btn a {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    /* background-color: #fff; */
+}
+
+.slider__btn a.previous {
+    left: -20%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-left' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='11 7 6 12 11 17' /%3E%3Cpolyline points='17 7 12 12 17 17' /%3E%3C/svg%3E");
+    text-indent: -99999px;
+}
+
+.slider__btn a.next {
+    right: -20%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-right' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='7 7 12 12 7 17' /%3E%3Cpolyline points='13 7 18 12 13 17' /%3E%3C/svg%3E");
+    text-indent: -99999px;
+}
+
+/* .slider__btn a.previous:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-left' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='11 7 6 12 11 17' /%3E%3Cpolyline points='17 7 12 12 17 17' /%3E%3C/svg%3E");
+  }
+
+  .slider__btn a.next:hover {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-right' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='7 7 12 12 7 17' /%3E%3Cpolyline points='13 7 18 12 13 17' /%3E%3C/svg%3E");
+  } */
+
+.slider__dot {
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translateX(-50%);
+}
+
+.slider__dot .dot {
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    opacity: 0.5;
+    display: inline-block;
+    border-radius: 50%;
+    text-indent: -9999px;
+    transition: all 0.5s;
+    margin: 3px;
+}
+
+.slider__dot .dot.active {
+    background-color: #7afafa;
+}
+
+
+
+.trackbox {
+    width: 700px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.track {
+    width: 200px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 12rem;
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+}
+
+.slider {
+    width: 400px;
+    height: 400px;
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    background-color: #fff;
+}
+
+.slider ol {
+    margin-top: 50px;
+}
+
+.slider li {
+    font-size: var(--size-m);
+    text-align: left;
+    padding: 15px;
+}
+
+
+
+
+
+.basic {
+    text-indent: 90px;
+}
+
+.TITLE {
+    text-indent: 20px;
+}
+
+.time {
+    font-weight: bold;
+    color: #444;
+}
+
+.teaser {
+    width: 100%;
+    height: auto;
+    position: relative;
+    /* background-color: #000; */
+}
+
+.movie {
+    width: 100%;
+    height: 75vh;
+    margin: 0 auto;
+}
+
+.movie iframe {
+    width: 100%;
+    border: 0;
+    padding-bottom: 2px;
+}
+
+
+/* LEGACY */
+#legacy {
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: -2px;
+}
+
+.legacyboard {
+    width: 74%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 13%;
+}
+
+.legacy2023 {
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.year2023 {
+    font-weight: bold;
+    font-size: 10rem;
+    text-align: center;
+    color: var(--white);
+    padding: 15% 0 5% 0;
+}
+
+.awards2023 {
+    text-align: center;
+    font-size: var(--size-s);
+    color: var(--white);
+}
+
+.awards2023 li {
+    padding: 3px;
+}
+
+.legacy2022 {
+    width: 60%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+.year2022 {
+    font-weight: bold;
+    font-size: 10rem;
+    text-align: center;
+    color: var(--white);
+    padding: 10% 0 5% 0;
+}
+
+.awards2022 {
+    text-align: center;
+    font-size: var(--size-s);
+    color: var(--white);
+}
+
+.awards2022 li {
+    padding: 3px;
+}
+
+.bottomphoto {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.bottomphotoinner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.bottomphotoinner img {
+    width: 100%;
+}

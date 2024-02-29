@@ -9,6 +9,15 @@ $(window).scroll(function () {
         });
         $('.topbar li a').css("color", "#fff");
 
+        // $("#home").mouseover(function(){
+        //     $(".hpage a").css("color","#7afafa")
+           
+        // });
+        // $("#home").mouseout(function(){
+        //     $(".hpage a").css("color","transparent")
+        // });
+        
+
     } else if (height > 300 && height < 2000) {
         $('.topbar li a').hover(function(){
             $(this).css("color", "#7afafa")
@@ -16,6 +25,15 @@ $(window).scroll(function () {
             $(this).css("color", "#000")
         });
         $('.topbar li a').css("color", "#000");
+
+        // $("#about").mouseover(function(){
+        //     $(".apage a").css("color","#7afafa")
+        // });
+        // $("#about").mouseout(function(){
+        //     $(".apage a").css("color","transparent")
+        // });
+
+
 
     } else if (height > 2200 && height < 3000) {
         $('.topbar li a').hover(function(){
@@ -25,6 +43,15 @@ $(window).scroll(function () {
         }); 
         $('.topbar li a').css("color", "#fff");
 
+        // $("#members").mouseover(function(){
+        //     $(".mpage a").css("color","#7afafa")
+        // });
+        // $("#members").mouseout(function(){
+        //     $(".mpage a").css("color","transparent")
+        // });
+
+
+
     } else if (height > 2000 && height < 6300) {
         $('.topbar li a').hover(function(){
             $(this).css("color", "#7afafa")
@@ -33,6 +60,21 @@ $(window).scroll(function () {
         });        
         $('.topbar li a').css("color", "#000");
 
+        // $("#gallery").mouseover(function(){
+        //     $(".gpage a").css("color","#7afafa")
+        // });
+        // $("#gallery").mouseout(function(){
+        //     $(".gpage a").css("color","transparent")
+        // });
+
+        // $("#discography").mouseover(function(){
+        //     $(".dpage a").css("color","#7afafa")
+        // });
+        // $("#discography").mouseout(function(){
+        //     $(".dpage a").css("color","transparent")
+        // });
+
+
     } else if (height > 6300) {
         $('.topbar li a').hover(function(){
             $(this).css("color", "#7afafa")
@@ -40,15 +82,33 @@ $(window).scroll(function () {
             $(this).css("color", "#fff")
         });         
         $('.topbar li a').css("color", "#fff");
+
+        // $("#legacy").mouseover(function(){
+        //     $(".lpage a").css("color","#7afafa")
+        // });
+        // $("#legacy").mouseout(function(){
+        //     $(".lpage a").css("color","transparent")
+        // });
     }
 });
-
-
 
 // scrollY
 // window.addEventListener('scroll', function(){
 //     console.log(window.scrollY)
 // });
+
+
+
+// 메인애니메이션
+$(document).ready(function () {
+    $(".artistlogo img").css({ transform: "translateY(0px)", opacity: 1 })
+    $(".topbar").css({ transform: "translateX(0px)", opacity: 1 })
+});
+
+
+
+
+
 
 
 //프로필 이미지 호버
