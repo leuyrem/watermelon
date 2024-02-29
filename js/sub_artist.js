@@ -51,6 +51,56 @@ $(window).scroll(function () {
 // });
 
 
+//프로필 이미지 호버
+$(function () {
+    $('.ph1').mouseover(function () {
+        $('.ph1 img').attr('src', 'sub_img/ph1-1.jpg')
+    });
+    $('.ph1').mouseout(function () {
+        $('.ph1 img').attr('src', 'sub_img/ph1.jpg')
+    });
+});
+
+$(function () {
+    $('.ph3').mouseover(function () {
+        $('.ph3 img').attr('src', 'sub_img/ph3-1.jpg')
+    });
+    $('.ph3').mouseout(function () {
+        $('.ph3 img').attr('src', 'sub_img/ph3.jpg')
+    });
+});
+
+$(function () {
+    $('.ph4').mouseover(function () {
+        $('.ph4 img').attr('src', 'sub_img/ph4-1.jpg')
+    });
+    $('.ph4').mouseout(function () {
+        $('.ph4 img').attr('src', 'sub_img/ph4.jpg')
+    });
+});
+
+$(function () {
+    $('.ph5').mouseover(function () {
+        $('.ph5 img').attr('src', 'sub_img/ph5-1.jpg')
+    });
+    $('.ph5').mouseout(function () {
+        $('.ph5 img').attr('src', 'sub_img/ph5.jpg')
+    });
+});
+
+$(function () {
+    $('.ph8').mouseover(function () {
+        $('.ph8 img').attr('src', 'sub_img/ph8-1.jpg')
+    });
+    $('.ph8').mouseout(function () {
+        $('.ph8 img').attr('src', 'sub_img/ph8.jpg')
+    });
+});
+
+
+
+
+
 //앨범 슬라이드
 window.onload=function(){
 const sliderWrap = document.querySelector(".slider__wrap");
