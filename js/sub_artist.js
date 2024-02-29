@@ -99,15 +99,21 @@ $(window).scroll(function () {
 
 
 
-// 메인애니메이션
+// 애니메이션
 $(document).ready(function () {
     $(".artistlogo img").css({ transform: "translateY(0px)", opacity: 1 })
     $(".topbar").css({ transform: "translateX(0px)", opacity: 1 })
 });
 
 
+$(window).scroll(function () {
+    var ws = $(this).scrollTop();
 
-
+    var galleryboard = $('.galleryboard').offset().top;
+    if (ws > galleryboard - 800) {
+        $('.galleryboard').css("transform", "translateY(0px)").css("opacity", "1");
+    }
+});
 
 
 

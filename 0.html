@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{margin:0; padding:0;}
+li{list-style:none;}
+.container{
+  width: 640px;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+}
+.album{
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+}
+.images{
+  position: relative;
+  display: flex;
+  height: 400px;
+}
+img{
+  width: 400x;
+  height: 400px;
+}
+button, button:active, button:focus{
+  width: 100px; height: 30px;
+  border: none;
+  color: white;
+  background-color: teal;
+  outline: none;
+}
+button:hover{
+  background-color: turquoise;
+}
+button:disabled{
+  background-color: gray;
+}
+.prev{
+  float: left;
+}
+.next{
+  float: right;
+}
+    </style>
+</head>
+<body>
+  
+    <div class="container">
+        <h1>SIMPLE SLIDER</h1>
+        <div class="album">
+          <div class="images">
+            <img src="sub_img/disco1.png">
+            <img src="sub_img/disco2.png">
+            <img src="sub_img/disco3.jpg">
+            <img src="sub_img/disco4.jpg">
+          </div>
+        </div>
+        <button class="prev">PREV</button>
+        <button class="next">NEXT</button>  
+      </div>
+
+
+
+
+
+
+    <script>
+let curPos = 0;
+let postion = 0;
+const IMAGE_WIDTH = 640;
+const prevBtn = document.querySelector(".prev")
+const nextBtn = document.querySelector(".next")
+const images = document.querySelector(".images")
+ 
+function prev(){
+  if(curPos > 0){
+    nextBtn.removeAttribute("disabled")
+    postion += IMAGE_WIDTH;
+    images.style.transform = `translateX(${postion}px)`;
+    curPos = curPos - 1;
+  }
+  if(curPos == 0){
+    prevBtn.setAttribute('disabled', 'true')
+  }
+}
+function next(){
+  if(curPos < 3){
+    prevBtn.removeAttribute("disabled")
+    postion -= IMAGE_WIDTH;
+    images.style.transform = `translateX(${postion}px)`;
+    curPos = curPos + 1;
+  }
+  if(curPos == 3){
+    nextBtn.setAttribute('disabled', 'true')
+  }
+}
+ 
+function init(){
+  prevBtn.setAttribute('disabled', 'true')
+  prevBtn.addEventListener("click", prev)
+  nextBtn.addEventListener("click", next)
+}
+ 
+init();
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>   
+</body>
+</html>

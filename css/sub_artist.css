@@ -117,7 +117,7 @@
 }
 
 .explain p {
-    font-size: var(--size-xs);
+    font-size: 3.5rem;
 }
 
 .aboutphoto {
@@ -180,13 +180,17 @@
     height: 100%;
     border-radius: 5%;
     overflow: hidden;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.ph1:hover {
+    transform: rotateY(180deg);   
 }
 
 .ph1 img {
     width: 100%;
 }
-
-
 
 .ph2 {
     width: 200px;
@@ -204,6 +208,12 @@
     height: 100%;
     border-radius: 5%;
     overflow: hidden;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.ph3:hover {
+    transform: rotateY(180deg);   
 }
 
 .ph3 img {
@@ -215,6 +225,12 @@
     height: 100%;
     border-radius: 5%;
     overflow: hidden;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.ph4:hover {
+    transform: rotateY(180deg);   
 }
 
 .ph4 img {
@@ -224,9 +240,14 @@
 .ph5 {
     width: 270px;
     height: 100%;
-
     border-radius: 5%;
     overflow: hidden;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.ph5:hover {
+    transform: rotateY(180deg);   
 }
 
 .ph5 img {
@@ -260,6 +281,12 @@
     height: 100%;
     border-radius: 5%;
     overflow: hidden;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.ph8:hover {
+    transform: rotateY(180deg);   
 }
 
 .ph8 img {
@@ -329,6 +356,9 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 1s ease-in-out;
 }
 
 .ginner1 {
