@@ -23,3 +23,62 @@ $(document).ready(function () {
 
 
 // });
+
+
+
+$(window).scroll(function () {
+    var height = $(this).scrollTop();
+    if (height < 600 || height > 8500) {
+        $('#hamburger').hover(function(){
+            $(this).css("color", "#7afafa")
+        },function(){
+            $(this).css("color", "#fff")
+        });
+        $('#hamburger').css("color", "#fff");
+
+        
+
+    } else if (height > 300 && height < 2000) {
+        $('.topbar li a').hover(function(){
+            $(this).css("color", "#7afafa")
+        },function(){
+            $(this).css("color", "#000")
+        });
+        $('.topbar li a').css("color", "#000");
+
+
+
+
+    } else if (height > 2200 && height < 3000) {
+        $('.topbar li a').hover(function(){
+            $(this).css("color", "#7afafa")
+        },function(){
+            $(this).css("color", "#fff")
+        }); 
+        $('.topbar li a').css("color", "#fff");
+
+
+
+
+
+    } else if (height > 2000 && height < 6300) {
+        $('.topbar li a').hover(function(){
+            $(this).css("color", "#7afafa")
+        },function(){
+            $(this).css("color", "#000")
+        });        
+        $('.topbar li a').css("color", "#000");
+
+   
+
+    } else if (height > 6300) {
+        $('.topbar li a').hover(function(){
+            $(this).css("color", "#7afafa")
+        },function(){
+            $(this).css("color", "#fff")
+        });         
+        $('.topbar li a').css("color", "#fff");
+
+
+    }
+});

@@ -540,6 +540,12 @@
     padding: 0 13%;
 }
 
+.titlebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .discobox {
     width: 100%;
     height: auto;
@@ -549,8 +555,8 @@
 }
 
 .albumbox {
-    width: 700px;
-    height: 100vh;
+    width: 100%;
+    height: 170vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -558,13 +564,23 @@
 }
 
 .album {
-    width: 200px;
+    width: 400px;
     height: 100px;
     font-weight: bold;
     font-size: 12rem;
     text-align: center;
     font-family: 'MADE TOMMY Regular_PERSONAL USE';
 }
+
+.track {
+    width: 400px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 12rem;
+    text-align: center;
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+}
+
 
 .slider__wrap {
     display: flex;
@@ -576,7 +592,7 @@
 .slider__img {
     /*이미지가 나타나는(보이는) 영역*/
     position: relative;
-    width: 400px;
+    width: 800px;
     height: 400px;
     overflow: hidden;
 }
@@ -584,19 +600,56 @@
 .slider__inner {
     /*이미지가 슬라이드 되는(움직이는) 영역*/
     display: flex;
-    flex-wrap: wrap;
-    width: 4800px;
-    height: 450px;
+    width: 4000px;
+    height: 400px;
 }
 
 .slider {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
 }
 
 .slider img {
     width: 100%;
+}
+
+
+.discoblock {
+    width: 400px;
+    height: 100%;
+}
+
+.trackblock {
+    width: 400px;
+    height: 100%;
+    font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    background-color: #fff;
+}
+
+.trackblock ol {
+    margin-top: 60px;
+}
+
+.trackblock li {
+    font-size: var(--size-s);
+    text-align: left;
+    padding: 15px;
+}
+
+.basic {
+    text-indent: 110px;
+}
+
+.TITLE {
+    text-indent: 55px;
+}
+
+.time {
+    font-weight: bold;
+    color: #444;
 }
 
 .slider__btn a {
@@ -605,17 +658,16 @@
     transform: translateY(-50%);
     width: 60px;
     height: 60px;
-    /* background-color: #fff; */
 }
 
 .slider__btn a.previous {
-    left: -20%;
+    left: -10%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-left' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='11 7 6 12 11 17' /%3E%3Cpolyline points='17 7 12 12 17 17' /%3E%3C/svg%3E");
     text-indent: -99999px;
 }
 
 .slider__btn a.next {
-    right: -20%;
+    right: -10%;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-chevrons-right' width='60' height='60' viewBox='0 0 24 24' stroke-width='2' stroke='%23000000' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpolyline points='7 7 12 12 7 17' /%3E%3Cpolyline points='13 7 18 12 13 17' /%3E%3C/svg%3E");
     text-indent: -99999px;
 }
@@ -653,56 +705,8 @@
 
 
 
-.trackbox {
-    width: 700px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.track {
-    width: 200px;
-    height: 100px;
-    font-weight: bold;
-    font-size: 12rem;
-    font-family: 'MADE TOMMY Regular_PERSONAL USE';
-}
-
-.slider {
-    width: 400px;
-    height: 400px;
-    font-family: 'MADE TOMMY Regular_PERSONAL USE';
-    background-color: #fff;
-}
-
-.slider ol {
-    margin-top: 50px;
-}
-
-.slider li {
-    font-size: var(--size-m);
-    text-align: left;
-    padding: 15px;
-}
 
 
-
-
-
-.basic {
-    text-indent: 90px;
-}
-
-.TITLE {
-    text-indent: 20px;
-}
-
-.time {
-    font-weight: bold;
-    color: #444;
-}
 
 .teaser {
     width: 100%;
