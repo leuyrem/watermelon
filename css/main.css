@@ -1,26 +1,63 @@
 @charset "utf-8";
 
-
-/* 메인슬라이더 */
-#main__sldier{
+/* 메인 슬라이드 */
+#main__slide{
     width: 100%;
     height: 100vh;
-}
-
-.main__sldier__conatier {
+    margin: 0px auto;
     position: relative;
+    overflow: hidden;
 }
 
 .main__bg {
-
+    width: 100%;
 }
 
-.main__bg img {
-
+.main__bg>li {
+    width: 100%;
+    height: 100vh;
+    float: left;
 }
 
-/* 앨범슬라이더 */
-#album__slider {
+.main__bg>li img {
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    position: absolute;
+    top: 50%;
+    display: block;
+    font-size: 38px;
+    color: #fff;
+    line-height: 20px;
+
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    height: 50px;
+    transform: translateY(-50%);
+}
+
+span:hover {
+    color: #000;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 10px 10px 0px;
+    padding: 10px;
+}
+
+.next {
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+}
+
+
+
+/* 앨범 슬라이드 */
+#album__slide {
     width: 100%;
     height: 100vh;
 }
