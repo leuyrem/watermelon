@@ -579,6 +579,7 @@
     font-size: 12rem;
     text-align: center;
     font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    display: none;
 }
 
 
@@ -1386,6 +1387,7 @@
     font-size: 10rem;
     text-align: center;
     font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    display: none;
 }
 
 .slider__wrap {
@@ -2165,7 +2167,7 @@
 
 .albumbox {
     width: 100%;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2188,6 +2190,7 @@
     font-size: 7rem;
     text-align: center;
     font-family: 'MADE TOMMY Regular_PERSONAL USE';
+    display: none;
 }
 
 .slider__wrap {
@@ -2417,7 +2420,7 @@
 /* HOME */
 #home {
     width: 100%;
-    height: 40vh;
+    height: 100vh;
 }
 
 .mainhome {
@@ -2426,7 +2429,7 @@
 
 .mainbg {
     width: 100%;
-    height: 40vh;
+    height: 100vh;
     position: absolute;
     overflow: hidden;
     background-repeat: no-repeat;
@@ -2436,9 +2439,9 @@
 
 .mainbg img {
     position: absolute;
-    top: -80%;
-    left: -15%;
-    width: 140%;
+    top: -25%;
+    left: -23%;
+    width: 160%;
 }
 
 .topbar {
@@ -2479,11 +2482,11 @@
 }
 
 .artistlogo {
-    width: 300px;
+    width: 450px;
     height: 80px;
     position: absolute;
-    top: 300px;
-    left: 23%;
+    top: 700px;
+    left: 5%;
 }
 
 .artistlogo img {
@@ -3233,7 +3236,7 @@
 
 .mainbg img {
     position: absolute;
-    top: -75%;
+    top: -80%;
     left: -20%;
     width: 150%;
 }
