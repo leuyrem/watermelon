@@ -31,8 +31,6 @@ span {
     font-size: 38px;
     color: #fff;
     line-height: 20px;
-
-    background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
     height: 50px;
     transform: translateY(-50%);
@@ -86,4 +84,4 @@ background-color: aqua;}
 }
 
 
-
+ 
