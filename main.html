@@ -7,14 +7,14 @@
     <title>Watermelon</title>
 
     <link rel="stylesheet" href="css/reset.css">
-
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/main.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/logo_white_01_.ico">
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <div class="small">
             <div class="logo"><a href="#"><img src="img/logo(white_03).png" alt="logo"></a></div>
             <div id="hamburger">
@@ -66,59 +66,88 @@
                 </li>
             </ul>
         </nav>
-    </header> -->
+    </header>
 
 
 
 
     <!-- 메인 슬라이드 -->
-    <!-- <div id="main__slide">
-        <ul class="main__bg">
-            <li>
-                <img src="main_img/iu.jpg" alt="">
-            </li>
-            <li>
-                <img src="main_img/newjeans.jpg" alt="">
-            </li>
-            <li>
-                <img src="main_img/실리카겔.jpg" alt="">
-            </li>
-            <li>
-                <img src="main_img/tiwce2.jpg" alt="">
-            </li>
-        </ul>
+    <div id="main__slide">
+        <div class="main__wrap">
+            <div class="main__bg__slides">
+                <div class="bn active">
+                    <div class="inner-txt">
+                        <img src="main_img/캡처.PNG" alt="">
+                    </div>
+                </div>
+
+                <div class="bn">
+                    <div class="inner__box">
+                        <img src="main_img/newjeans.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="bn">
+                    <div class="inner__box">
+                        <img src="main_img/nmixx.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="bn">
+                    <div class="inner__box">
+                        <img src="main_img/bibi.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="bn">
+                    <div class="inner__box">
+                        <img src="main_img/itzy.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="main__page__btns">
+                <button class="page__btn prev__btn"><i class="xi__angle__left"></i></button>
+                <button class="page__btn next__btn"><i class="xi__angle__right"></i></button>
+                <div class="page__no">
+                    <span class="current__slide__no"></span>
+                    <span class="slash">/</span>
+                    <span class="total__slide__no"></span>
+                </div>
+            </div>
 
 
 
-        <span class="prev">&lt;</span>
-        <span class="next">&gt;</span>
-    </div> -->
 
 
-
-    <!-- 앨범 슬라이드 -->
-    <div id="album__slide">
-        <div class="cover__slide">
-            <ul class="album__cover">
-                <li class="cover__1"></li>
-                <li class="cover__2"></li>
-                <li class="cover__3"></li>
-                <li class="cover__4"></li>
-                <li class="cover__5"></li>
-                <li class="cover__6"></li>
-                <li class="cover__7"></li>
-                <li class="cover__8"></li>
-            </ul>
-
-            <span class="prev">&lt;</span>
-            <span class="next">&gt;</span>
         </div>
     </div>
 
 
+    <!-- 앨범 슬라이드 -->
+    <div class="album__wrapper">
+        <ul class="album__cover">
+            <li class="album__box1"> <img src="main_img/a1.jpg" alt="" /> </li>
+            <li class="album__box2"> <img src="main_img/a2.jpg" alt="" /> </li>
+            <li class="album__box3"> <img src="main_img/a3.jpg" alt="" /> </li>
+            <li class="album__box4"> <img src="main_img/a4.jpg" alt="" /> </li>
+            <li class="album__box5"> <img src="main_img/a5.jpg" alt="" /> </li>
+            <li class="album__box6"> <img src="main_img/a6.jpg" alt="" /> </li>
+            <li class="album__box7"> <img src="main_img/a7.jpg" alt="" /> </li>
+            <li class="album__box8"> <img src="main_img/a8.jpg" alt="" /> </li>
+            <li class="album__box9"> <img src="main_img/a9.jpg" alt="" /> </li>
+            <li class="album__box10"> <img src="main_img/a10.jpg" alt="" /> </li>
+        </ul>
+    </div>
+
+    <p class="controls">
+        <span class="cover__prev">&lt;</span>
+        <span class="cover__next">&gt;</span>
+    </p>
 
 
-    <!-- <footer>
+
+    <footer>
         <div id="footer_box">
             <div class="footer_menu1">
                 <ul>
@@ -192,10 +221,10 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script src="js/common.js"></script>
     <script src="js/main.js"></script>
 </body>
 

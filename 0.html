@@ -1,444 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         /*  폰트 적용 */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean');
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400&display=swap&subset=korean');
 
-@font-face { font-family: '국립박물관문화재단클래식M'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식M.woff') format('woff'); font-weight: normal; font-style: normal; }
+        @font-face {
+            font-family: '국립박물관문화재단클래식M';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식M.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-@font-face { font-family: '국립박물관문화재단클래식L'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff'); font-weight: normal; font-style: normal; }
+        @font-face {
+            font-family: '국립박물관문화재단클래식L';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식L.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-html {
-    font-family: "Noto Sans KR", sans-serif;
-}
+        html {
+            font-family: "Noto Sans KR", sans-serif;
+        }
 
-/* 노말라이즈 */
-body, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, p, figure {
-    margin:0;
-    padding:0;
-    list-style:none;
-}
+        /* 노말라이즈 */
+        body,
+        ul,
+        li,
+        dl,
+        dt,
+        dd,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        p,
+        figure {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
 
-h1, h2, h3, h4, strong, th {
-    font-weight:normal;
-    font-family:inherit;
-    color:inherit;
-}
+        h1,
+        h2,
+        h3,
+        h4,
+        strong,
+        th {
+            font-weight: normal;
+            font-family: inherit;
+            color: inherit;
+        }
 
-a {
-    color:inherit;
-    text-decoration:none;
-}
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
 
-/* 라이브러리 */
-.con {
-    margin:0 auto;
-}
+        /* 라이브러리 */
+        .con {
+            margin: 0 auto;
+        }
 
-.img-box > img {
-    width:100%;
-    display:block;
-}
+        .img-box>img {
+            width: 100%;
+            display: block;
+        }
 
-.row::after {
-    content:"";
-    display:block;
-    clear:both;
-}
+        .row::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
 
-.cell {
-    float:left;
-    box-sizing:border-box;
-}
+        .cell {
+            float: left;
+            box-sizing: border-box;
+        }
 
-.cell-right {
-    float:right;
-    box-sizing:border-box;
-}
+        .cell-right {
+            float: right;
+            box-sizing: border-box;
+        }
 
-.margin-0-auto {
-    margin:0 auto;
-}
+        .margin-0-auto {
+            margin: 0 auto;
+        }
 
-.block {
-    display:block;
-}
+        .block {
+            display: block;
+        }
 
-.inline-block {
-    display:inline-block;
-}
+        .inline-block {
+            display: inline-block;
+        }
 
-.text-align-center {
-    text-align:center;
-}
+        .text-align-center {
+            text-align: center;
+        }
 
-.line-height-0-ch-only {
-    line-height:0;
-}
+        .line-height-0-ch-only {
+            line-height: 0;
+        }
 
-.line-height-0-ch-only > * {
-    line-height:normal;
-}
+        .line-height-0-ch-only>* {
+            line-height: normal;
+        }
 
-.relative {
-    position:relative;
-}
+        .relative {
+            position: relative;
+        }
 
-.absolute-left {
-    position:absolute;
-    left:0;
-}
+        .absolute-left {
+            position: absolute;
+            left: 0;
+        }
 
-.absolute-right {
-    position:absolute;
-    right:0;
-}
+        .absolute-right {
+            position: absolute;
+            right: 0;
+        }
 
-.absolute-middle {
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-}
+        .absolute-middle {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
 
-.table {
-    display:table;
-}
+        .table {
+            display: table;
+        }
 
-.table-cell {
-    display:table-cell;
-}
+        .table-cell {
+            display: table-cell;
+        }
 
-input, button, select, fieldset {
-    -webkit-border-radius: 0;
-    border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border:0;
-    background-color:transparent;
-}
+        input,
+        button,
+        select,
+        fieldset {
+            -webkit-border-radius: 0;
+            border-radius: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            border: 0;
+            background-color: transparent;
+        }
 
-fieldset {
-    padding:0;
-    margin:0;
-}
+        fieldset {
+            padding: 0;
+            margin: 0;
+        }
 
-.blind, legend {
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    font-size: 12px;
-    clip: rect(1px, 1px, 1px, 1px);
-}
+        .blind,
+        legend {
+            overflow: hidden;
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            font-size: 12px;
+            clip: rect(1px, 1px, 1px, 1px);
+        }
 
-button {
-    cursor:pointer;
-    padding:0;
-}
-
-.font-museum-l {
-    font-family:'국립박물관문화재단클래식L';
-}
-
-.font-museum-m {
-    font-family:'국립박물관문화재단클래식M';
-}
-
-/* 커스텀 */
-body {
-    background-color:#151515;
-    overflow-x:hidden;
-}
-
-.wrap {
-    width:100%;
-}
-
-/* 메인 배너 슬라이더 */
-.main-bn {
-    width:100%;
-    height:100vh;
-    position:relative;
-}
-
-.main-bn > .slider > .slides > .bn {
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    opacity:0;
-    visibility:hidden;
-    transition:opacity 1s, visibility 1s;
-}
-
-.main-bn > .slider > .slides > .bn.active {
-    opacity:1;
-    visibility:visible;
-}
-
-/* 메인 배너 내부 텍스트 */
-.main-bn > .slider > .slides > .bn > .inner-txt {
-    width:700px;
-    height:350px;
-    background-color:rgba(0,0,0,.6);
-    position:absolute;
-    left:90px;
-    bottom:290px;
-    color:#fff;
-    box-sizing:border-box;
-    padding:55px 0 0 50px;
-    letter-spacing:0.05rem;
-}
-
-.main-bn > .slider > .slides > .bn > .inner-txt > .tt {
-    font-size:60px;
-}
-
-.main-bn > .slider > .slides > .bn > .inner-txt > .st {
-    font-size:24px;
-    margin-left:28px;
-}
-
-.main-bn > .slider > .slides > .bn > .inner-txt > p {
-    font-size:18px;
-    margin:45px 0;
-}
-
-.main-bn > .slider > .slides > .bn > .inner-txt > span {
-    position:absolute;
-    top:-40px;
-    left:10px;
-    font-size:28px;
-}
-
-/* 자세히 보기 및 예약하기 */
-.main-bn > .slider > .slides > .bn > .inner-txt > div {
-    width:130px;
-    height:45px;
-    text-align:center;
-}
-
-.main-bn > .slider > .slides > .bn > .inner-txt > .view {
-    background-color:#292929;
-    margin-right:27px;
-}
-
-.main-bn > .slider > .slides > .bn > .inner-txt > .reserve {
-    background-color:#a50000;
-}
+        button {
+            cursor: pointer;
+            padding: 0;
+        }
 
 
-.main-bn > .slider > .slides > .bn > .inner-txt > div > a {
-    display:block;
-    line-height:45px;
-    transition:color .3s;
-}
+        /* 커스텀 */
+        body {
+            overflow-x: hidden;
+        }
 
-.main-bn > .slider > .slides > .bn > .inner-txt > div > a:hover {
-    color:#afafaf;
-}
+        .wrap {
+            width: 100%;
+        }
 
-/* 슬라이더 페이지 버튼 */
-.main-bn > .slider > .page-btns {
-    position:absolute;
-    left:680px;
-    bottom:305px;
-}
+        /* 메인 배너 슬라이더 */
+        .main-bn {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
 
-.main-bn > .slider > .page-btns > .page-btn {
-    color:#fff;
-    display:inline-block;
-    cursor:pointer;
-}
+        .main-bn>.slider>.slides>.bn {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 1s, visibility 1s;
+        }
 
-.main-bn > .slider > .page-btns > .next-btn {
-    margin-left:60px;
-}
+        .main-bn>.slider>.slides>.bn.active {
+            opacity: 1;
+            visibility: visible;
+        }
 
-.main-bn > .slider > .page-btns > .page-btn > i {
-    display:block;
-    font-size:20px;
-}
+        /* 메인 배너 내부 텍스트 */
+        .main-bn>.slider>.slides>.bn>.inner-txt {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+            color: #fff;
+            box-sizing: border-box;
+        }
 
-/* 슬라이더 페이지 번호 */
-.main-bn > .slider > .page-btns > .page-no {
-    position:absolute;
-    top:-3px;
-    left:50%;
-    transform:translateX(-50%);
-}
+        .main-bn>.slider>.slides>.bn>.inner-txt img {
+            width: 100%;
+            height: 100%;
+        }
 
-.main-bn > .slider > .page-btns > .page-no > span {
-    display:inline-block;
-    color:#fff;
-    font-size:18px;
-}
+
+
+        /* 슬라이더 페이지 버튼 */
+        .main-bn>.slider>.page-btns {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+        }
+
+        .main-bn>.slider>.page-btns>.page-btn {
+            color: #fff;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .main-bn>.slider>.page-btns>.next-btn {
+            margin-left: 60px;
+        }
+
+        .main-bn>.slider>.page-btns>.page-btn>i {
+            display: block;
+            font-size: 20px;
+        }
+
+        /* 슬라이더 페이지 번호 */
+        .main-bn>.slider>.page-btns>.page-no {
+            position: absolute;
+            top: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .main-bn>.slider>.page-btns>.page-no>span {
+            display: inline-block;
+            color: #fff;
+            font-size: 18px;
+        }
     </style>
+
 </head>
+
+
 <body>
     <!-- 제이쿼리 불러오기 -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- XEIcon 폰트 불러오기 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- XEIcon 폰트 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
-<div class="wrap">
-    <!-- 상단 배너 슬라이더 -->
-    <div class="main-bn">
-        <div class="slider">
-            <div class="slides">
-                <div class="bn active" style="background-image:url('https://kimyang-sun.github.io/pf-img/esc-img/main_bn_01.jpg');">
-                    <div class="inner-txt">
-                        <h1 class="tt font-museum-m inline-block">수상한 병원</h1>
-                        <h2 class="st font-museum-l inline-block">임상실험의 비밀</h2>
-                        <span class="font-museum-l">ROOM 01</span>
-                        <p>하루아침에 생체실험의 피해자가 될 위기에 처한<br>당신의 운명은 어떻게 될 것인가?</p>
-                        <div class="view inline-block"><a href="#">자세히 보기</a></div>
-                        <div class="reserve inline-block"><a href="#">예약하기</a></div>
+    <div class="wrap">
+        <!-- 상단 배너 슬라이더 -->
+        <div class="main-bn">
+            <div class="slider">
+                <div class="slides">
+                    <div class="bn active">
+                        <div class="inner-txt">
+                            <img src="main_img/캡처.PNG" alt="">
+                        </div>
+                    </div>
+
+                    <div class="bn">
+                        <div class="inner-txt">
+                            <img src="main_img/newjeans.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="bn">
+                        <div class="inner-txt">
+                            <img src="main_img/nmixx.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="bn">
+                        <div class="inner-txt">
+                            <img src="main_img/tiwce2.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="bn">
+                        <div class="inner-txt">
+                            <img src="main_img/bibi.jpg" alt="">
+
+                        </div>
+                    </div>
+                    <div class="bn">
+                        <div class="inner-txt">
+                            <img src="main_img/itzy.jpg" alt="">
+
+                        </div>
                     </div>
                 </div>
-                <div class="bn" style="background-image:url('https://kimyang-sun.github.io/pf-img/esc-img/main_bn_02.jpg');">
-                    <div class="inner-txt">
-                        <h1 class="tt font-museum-m inline-block">TRAP TRAIN</h1>
-                        <h2 class="st font-museum-l inline-block">루팡의 위기</h2>
-                        <span class="font-museum-l">ROOM 02</span>
-                        <p>역에 도착하기까지 한 시간.<br>경찰의 포위망이 서서히 좁혀오기 시작하는데...</p>
-                        <div class="view inline-block"><a href="#">자세히 보기</a></div>
-                        <div class="reserve inline-block"><a href="#">예약하기</a></div>
+                <div class="page-btns">
+                    <button class="page-btn prev-btn"><i class="xi-angle-left"></i></button>
+                    <button class="page-btn next-btn"><i class="xi-angle-right"></i></button>
+                    <div class="page-no">
+                        <span class="current-slide-no"></span>
+                        <span class="slash">/</span>
+                        <span class="total-slide-no"></span>
                     </div>
-                </div>
-                <div class="bn" style="background-image:url('https://kimyang-sun.github.io/pf-img/esc-img/main_bn_03.jpg');">
-                    <div class="inner-txt">
-                        <h1 class="tt font-museum-m inline-block">DEAD NUMBER</h1>
-                        <h2 class="st font-museum-l inline-block">망자의 전화</h2>
-                        <span class="font-museum-l">ROOM 03</span>
-                        <p>그곳은 몇 년 전 자살사건이 있었던 저택.<br>과연 이 곳에서는 어떤 일들이 벌어지고 있는 것일까.</p>
-                        <div class="view inline-block"><a href="#">자세히 보기</a></div>
-                        <div class="reserve inline-block"><a href="#">예약하기</a></div>
-                    </div>
-                </div>
-                <div class="bn" style="background-image:url('https://kimyang-sun.github.io/pf-img/esc-img/main_bn_04.jpg');">
-                    <div class="inner-txt">
-                        <h1 class="tt font-museum-m inline-block">투란의 독방</h1>
-                        <h2 class="st font-museum-l inline-block">위험한 감옥</h2>
-                        <span class="font-museum-l">ROOM 04</span>
-                        <p>투란의 행보를 찾기 위해, 당신은 천천히<br>'투란'의 독방 안으로 발걸음을 옮기기 시작하는데...</p>
-                        <div class="view inline-block"><a href="#">자세히 보기</a></div>
-                        <div class="reserve inline-block"><a href="#">예약하기</a></div>
-                    </div>
-                </div>
-                <div class="bn" style="background-image:url('https://kimyang-sun.github.io/pf-img/esc-img/main_bn_05.jpg');">
-                    <div class="inner-txt">
-                        <h1 class="tt font-museum-m inline-block">스페이드 클럽</h1>
-                        <h2 class="st font-museum-l inline-block">바의 숨겨진 비밀</h2>
-                        <span class="font-museum-l">ROOM 05</span>
-                        <p>벽 너머에서 여러 사람의 목소리가 조그맣게 들려온다.<br>이 수상한 바를 천천히 살펴보기로 한다.</p>
-                        <div class="view inline-block"><a href="#">자세히 보기</a></div>
-                        <div class="reserve inline-block"><a href="#">예약하기</a></div>
-                    </div>
-                </div>
-                <div class="bn" style="background-image:url('https://kimyang-sun.github.io/pf-img/esc-img/main_bn_06.jpg');">
-                    <div class="inner-txt">
-                        <h1 class="tt font-museum-m inline-block">헨젤과 그레텔</h1>
-                        <h2 class="st font-museum-l inline-block">마녀의 집</h2>
-                        <span class="font-museum-l">ROOM 06</span>
-                        <p>당신에게 찾아온 처음이자 마지막 기회!<br>과연 당신은 마녀가 돌아오기 전에 마녀의 손아귀에서 벗어날 수 있을까?</p>
-                        <div class="view inline-block"><a href="#">자세히 보기</a></div>
-                        <div class="reserve inline-block"><a href="#">예약하기</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="page-btns">
-                <button class="page-btn prev-btn"><i class="xi-angle-left"></i></button>
-                <button class="page-btn next-btn"><i class="xi-angle-right"></i></button>
-                <div class="page-no">
-                    <span class="current-slide-no"></span>
-                    <span class="slash">/</span>
-                    <span class="total-slide-no"></span>
                 </div>
             </div>
         </div>
-    </div>    
-</div>
+    </div>
 
 
-<script>
-    console.clear();
+    <script>
+        console.clear();
 
-// 상단 메인 배너 슬라이더
-$('.main-bn > .slider > .page-btns > .page-btn').click(function(){
-    var $clicked = $(this);
-    var $slider = $(this).closest('.slider');
-    
-    var index = $(this).index();
-    var isLeft = index == 0;
-    //console.log(index);
-    
-    var $current = $slider.find(' > .slides > .bn.active');
-    var $post;
-    
-    if ( isLeft ){
-        $post = $current.prev();
-    }
-    else {
-        $post = $current.next();
-    }
-    //console.log($post.length);
-    
-    if ( $post.length == 0 ){
-        if ( isLeft ){
-            $post = $slider.find(' > .slides > .bn:last-child');
-        }
-        else {
-            $post = $slider.find(' > .slides > .bn:first-child');
-        }
-    }
-    
-    $current.removeClass('active');
-    $post.addClass('active');
-    
-    updateCurrentPageNumber();
-});
+        // 상단 메인 배너 슬라이더
+        $('.main-bn > .slider > .page-btns > .page-btn').click(function () {
+            var $clicked = $(this);
+            var $slider = $(this).closest('.slider');
 
-setInterval(function(){
-    $('.main-bn > .slider > .page-btns > .next-btn').click();
-}, 8000);
+            var index = $(this).index();
+            var isLeft = index == 0;
+            //console.log(index);
 
-// 슬라이더 페이지 번호 지정
-function pageNumber__Init(){
-    // 전채 배너 페이지 갯수 세팅해서 .slider 에 'data-slide-total' 넣기
-    var totalSlideNo = $('.main-bn > .slider > .slides > .bn').length;
-    //console.log(totalSlideNo);
-    
-    $('.main-bn > .slider').attr('data-slide-total', totalSlideNo);
-    
-    // 각 배너 페이지 번호 매기기
-    $('.main-bn > .slider > .slides > .bn').each(function(index, node){
-        $(node).attr('data-slide-no', index + 1);
-    });
-};
+            var $current = $slider.find(' > .slides > .bn.active');
+            var $post;
 
-pageNumber__Init();
+            if (isLeft) {
+                $post = $current.prev();
+            }
+            else {
+                $post = $current.next();
+            }
+            //console.log($post.length);
 
-// 슬라이더 이동시 페이지 번호 변경
-function updateCurrentPageNumber(){
-    var totalSlideNo = $('.main-bn > .slider').attr('data-slide-total');
-    var currentSlideNo = $('.main-bn > .slider > .slides > .bn.active').attr('data-slide-no');
-    
-    $('.main-bn > .slider > .page-btns > .page-no > .total-slide-no').html(totalSlideNo);
-    $('.main-bn > .slider > .page-btns > .page-no > .current-slide-no').html(currentSlideNo);
-};
+            if ($post.length == 0) {
+                if (isLeft) {
+                    $post = $slider.find(' > .slides > .bn:last-child');
+                }
+                else {
+                    $post = $slider.find(' > .slides > .bn:first-child');
+                }
+            }
 
-updateCurrentPageNumber()
-</script>
+            $current.removeClass('active');
+            $post.addClass('active');
+
+            updateCurrentPageNumber();
+        });
+
+        setInterval(function () {
+            $('.main-bn > .slider > .page-btns > .next-btn').click();
+        }, 8000);
+
+        // 슬라이더 페이지 번호 지정
+        function pageNumber__Init() {
+            // 전채 배너 페이지 갯수 세팅해서 .slider 에 'data-slide-total' 넣기
+            var totalSlideNo = $('.main-bn > .slider > .slides > .bn').length;
+            //console.log(totalSlideNo);
+
+            $('.main-bn > .slider').attr('data-slide-total', totalSlideNo);
+
+            // 각 배너 페이지 번호 매기기
+            $('.main-bn > .slider > .slides > .bn').each(function (index, node) {
+                $(node).attr('data-slide-no', index + 1);
+            });
+        };
+
+        pageNumber__Init();
+
+        // 슬라이더 이동시 페이지 번호 변경
+        function updateCurrentPageNumber() {
+            var totalSlideNo = $('.main-bn > .slider').attr('data-slide-total');
+            var currentSlideNo = $('.main-bn > .slider > .slides > .bn.active').attr('data-slide-no');
+
+            $('.main-bn > .slider > .page-btns > .page-no > .total-slide-no').html(totalSlideNo);
+            $('.main-bn > .slider > .page-btns > .page-no > .current-slide-no').html(currentSlideNo);
+        };
+
+        updateCurrentPageNumber()
+
+
+
+        //동영상 재생
+        $(document).on('click', '.play', function (e) {
+            e.preventDefault();
+            var play_button = this;
+            play_button.style.display = "none";
+            $('#promotion_video')[0].src += '?autoplay=1';
+        });
+
+    </script>
 </body>
+
 </html>

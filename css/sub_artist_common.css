@@ -67,7 +67,6 @@
 
 
 /* 헤더 부분 */
-
 .small {
     display: flex;
     justify-content: space-between;
@@ -76,6 +75,7 @@
     position: fixed;
     width: 100%;
     z-index: 999;
+    margin-top: 30px;
 }
 
 .small .logo {
@@ -95,8 +95,6 @@ nav ul li .sub li a:hover {
 @media (max-width: 769px) {
     * {
         font-family: 'Pretendard-Regular';
-        font-weight: 400;
-        font-size: var(--size-s);
     }
 
     /* 헤더 메인메뉴 */
@@ -357,8 +355,6 @@ nav ul li .sub li a:hover {
 @media (min-width: 770px) and (max-width: 1199px) {
     * {
         font-family: 'Pretendard-Regular';
-        font-weight: 400;
-        font-size: var(--size-s);
     }
 
     /* 헤더 메인메뉴 */
@@ -620,8 +616,6 @@ nav ul li .sub li a:hover {
 @media (min-width: 1200px) {
     * {
         font-family: 'Pretendard-Regular';
-        font-weight: 400;
-        font-size: var(--size-s);
     }
 
     /* 헤더 메인메뉴 */
