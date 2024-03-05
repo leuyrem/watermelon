@@ -176,15 +176,15 @@ const slider = sliderWrap.querySelectorAll(".slider");
 const sliderDot = sliderWrap.querySelector(".slider__dot");
 const sliderBtn = sliderWrap.querySelectorAll(".slider__btn a");
 
-let currentIndex = 0;                   //현재 보이는 (가장 위에 있는) 이미지
-let sliderInterval = 3000;              //다음 이미지로 넘어가는 간격의 시간
-let sliderCount = slider.length;        //전체 이미지의 총 수
-let sliderWidth = sliderWrap.querySelector(".slider__img").offsetWidth;            //이미지 width 값
+let currentIndex = 0;                 
+let sliderInterval = 3000;            
+let sliderCount = slider.length;     
+let sliderWidth = sliderWrap.querySelector(".slider__img").offsetWidth;          
 let dotIndex = "";
 
 function init() {
     //슬라이드 될 이미지만큼 도트 메뉴 생성
-    slider.forEach(() => dotIndex += "<a href='#' class='dot'></a>");
+    slider.forEach(() => dotIndex += "<a href='javascript:;' class='dot'></a>");
     sliderDot.innerHTML = dotIndex;
 
     //도트 메뉴 활성화 (첫 번째)
