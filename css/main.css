@@ -25,6 +25,7 @@
     transition: opacity 1s, visibility 1s;
 }
 
+
 .main__slides>.main__bn.active {
     opacity: 1;
     visibility: visible;
