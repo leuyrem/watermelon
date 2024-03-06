@@ -1,4 +1,21 @@
-// 서브메뉴 색상변경
+// 헤더 색상변경
+$(window).scroll(function () {
+    var head = $(this).scrollTop();
+    if (head > 800 && head < 2100) {
+        $('.logo img').attr("src", "img/logo(black_03).png");
+         $('#hamburger .line').css("background-color", "#000");
+    } else {
+        $('.logo img').attr("src", "img/logo(white_03).png");
+        $('#hamburger .line').css("background-color", "#fff");
+    } 
+});
+
+
+
+
+
+
+// 왼쪽 메뉴 색상변경
 $(window).scroll(function () {
     var height = $(this).scrollTop();
     if (height < 600 || height > 8500) {
@@ -9,14 +26,6 @@ $(window).scroll(function () {
         });
         $('.topbar li a').css("color", "#fff");
 
-        // $("#home").mouseover(function(){
-        //     $(".hpage a").css("color","#7afafa")
-           
-        // });
-        // $("#home").mouseout(function(){
-        //     $(".hpage a").css("color","transparent")
-        // });
-        
 
     } else if (height > 300 && height < 2000) {
         $('.topbar li a').hover(function(){
@@ -25,14 +34,6 @@ $(window).scroll(function () {
             $(this).css("color", "#000")
         });
         $('.topbar li a').css("color", "#000");
-
-        // $("#about").mouseover(function(){
-        //     $(".apage a").css("color","#7afafa")
-        // });
-        // $("#about").mouseout(function(){
-        //     $(".apage a").css("color","transparent")
-        // });
-
 
 
     } else if (height > 2200 && height < 3000) {
@@ -43,54 +44,28 @@ $(window).scroll(function () {
         }); 
         $('.topbar li a').css("color", "#fff");
 
-        // $("#members").mouseover(function(){
-        //     $(".mpage a").css("color","#7afafa")
-        // });
-        // $("#members").mouseout(function(){
-        //     $(".mpage a").css("color","transparent")
-        // });
 
-
-
-    } else if (height > 2000 && height < 6300) {
+    } else if (height > 2000 && height < 6900) {
         $('.topbar li a').hover(function(){
             $(this).css("color", "#7afafa")
         },function(){
             $(this).css("color", "#000")
         });        
         $('.topbar li a').css("color", "#000");
+        $('.logo img').attr("src", "img/logo(black_03).png");
+        $('#hamburger .line').css("background-color", "#000");
+  
 
-        // $("#gallery").mouseover(function(){
-        //     $(".gpage a").css("color","#7afafa")
-        // });
-        // $("#gallery").mouseout(function(){
-        //     $(".gpage a").css("color","transparent")
-        // });
-
-        // $("#discography").mouseover(function(){
-        //     $(".dpage a").css("color","#7afafa")
-        // });
-        // $("#discography").mouseout(function(){
-        //     $(".dpage a").css("color","transparent")
-        // });
-
-
-    } else if (height > 6300) {
+    } else if (height > 6950) {
         $('.topbar li a').hover(function(){
             $(this).css("color", "#7afafa")
         },function(){
             $(this).css("color", "#fff")
         });         
         $('.topbar li a').css("color", "#fff");
-
-        // $("#legacy").mouseover(function(){
-        //     $(".lpage a").css("color","#7afafa")
-        // });
-        // $("#legacy").mouseout(function(){
-        //     $(".lpage a").css("color","transparent")
-        // });
     }
 });
+
 
 // scrollY
 // window.addEventListener('scroll', function(){
