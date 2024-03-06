@@ -33,6 +33,7 @@
 }
 
 .main__inner {
+    width: 100%;
     height: 100vh;
     position: absolute;
     left: 0px;
@@ -43,7 +44,94 @@
 
 .main__inner img {
     width: 100%;
+    height: 100%;
 }
+
+.poster__tit1  {
+    position: absolute;
+    top: 380px;
+    left: 13%;
+    width: 250px;
+    height: 150px;
+}
+
+.poster__tit1 img {
+    width: 100%;
+}
+
+.title__btn1 {
+    border: #000 1px solid;
+    color: var(--black);
+    font-size: var(--size-s);
+    padding: 15px 30px;
+    margin-top: 20px;
+}
+
+.poster__tit2 {
+    position: absolute;
+    top: 200px;
+    left: 15%;
+    width: 1000px;
+    height: 240px;
+}
+
+.poster__tit2 img {
+    width: 100%;
+}
+
+.poster2__date {
+    position: absolute;
+    width: 250px;
+    height: 30px;
+    font-size: 6rem;
+    color: #000;
+    top: 170px;
+    left: 290px;
+}
+
+.poster2__place {
+    position: absolute;
+    width: 160px;
+    height: 30px;
+    font-size: 5rem;
+    color: #000;
+    bottom: 490px;
+    left: 980px;
+    text-align: center;
+}
+
+.title__btn2 {
+    border: #000 1px solid;
+    color: var(--black);
+    font-size: var(--size-s);
+    padding: 15px 50px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.poster__tit3 {
+    position: absolute;
+    width: 48%;
+    top: 200px;
+    left: 26%;
+}
+
+.poster__tit3 img {
+    width: 100%;
+}
+
+.title__btn3 {
+    border: #fff 1px solid;
+    color: #fff;
+    font-size: var(--size-s);
+    padding: 15px 50px;
+    float: right;
+    margin-bottom: -10px;
+}
+
+
+
+
 
 
 /* 슬라이드 페이지 버튼 */
@@ -109,6 +197,7 @@ button {
     height: 500px;
     overflow: hidden;
     background-color: black;
+    box-sizing: border-box;
 }
 
 .album__cover {
