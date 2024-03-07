@@ -50,6 +50,8 @@ function pageNumber__Init() {
 
 pageNumber__Init();
 
+
+
 // 슬라이드 이동시 페이지 번호 변경
 function updateCurrentPageNumber() {
     var totalSlideNo = $('.main__slider').attr('data-slide-total');
